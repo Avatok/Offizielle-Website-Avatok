@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Einfacher Waehrungsrechner</title>
+		<meta charset="8">
+		<link rel="stylesheet" type="text/css" href="../../../../../Styles/Styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../../../Grafiken/Icon.png">
+		<script type="text/javascript" src="code.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<nav class="links" style="--items: 5;">
+				<a href="../../../../../Index.html">Home</a>
+				<a href="../../../../Portfolio.html">Portfolio</a>
+				<a href="../../../../Social.html">Social Media</a>
+				<a href="../../../../AboutMe.html">About Me</a>
+				<a href="../../../../Kontakt.html">Kontakt</a>
+				<span class="line"></span>
+			</nav>
+		</header>
+		<div class="content">
+				<h1>Waehrungsrechner mit aktuellen Kursen</h1><br>
+				<h2>Alle Angaben ohne Gewaehr</h2><br>
+<br>
+				<form name="WR">
+					Betrag in Euro (€):
+					<input type="number" name="BIE">
+<br>
+<br>
+					In Welche Waehrung soll umgerechnet werden?:
+					<select name="ZW">
+						<option value="USD">US-amerikanischer Dollar</option>
+						<option value="YEN">Japanischer Yen</option>
+						<option value="CHF">Schweizer Franken</option>
+						<option value="GBP">Britisches Pfund Sterlin</option>
+						<option value="CZK">Tschechische Krone</option>
+						<option value="RUB">Russischer Rubel</option>
+						<option value="TRY">Türkische Lira</option>
+						<option value="PLN">Polnische Złoty</option>
+						<option value="KRW">Südkoreanischer Won</option>
+						<option value="ZAR">Südafrikanischer Rand</option>
+					</select>
+<br>
+<br>
+					<input type="button" value="In ausgewählte Waehrung Umrechnen" onclick="Umrechnen();"></Button>
+<br>
+<br>
+<br>
+<br>
+					Ergebnis:
+					<input type="number" name="ER">
+<br>
+					<img style="display: block; margin: auto;" src="Dekoration-1.svg">
+				</form>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Einfacher Taschenrechner</title>
+		<meta charset="8">
+		<link rel="stylesheet" type="text/css" href="../../../../../Styles/Styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../../../../../Grafiken/Icon.png">
+		<script type="text/javascript" src="code.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<nav class="links" style="--items: 5;">
+				<a href="../../../../../Index.html">Home</a>
+				<a href="../../../../Portfolio.html">Portfolio</a>
+				<a href="../../../../Social.html">Social Media</a>
+				<a href="../../../../AboutMe.html">About Me</a>
+				<a href="../../../../Kontakt.html">Kontakt</a>
+				<span class="line"></span>
+			</nav>
+		</header>
+		<div class="content">
+				<h1>Taschenrechner mit Grundrechnungsarten</h1><br>
+				<h2>Alle Angaben ohne Gewähr</h2><br>
+<br>
+			<form name="TR">
+				Zahl 1:
+				<input type="number" name="Z1">
+<br>
+<br>
+				Zahle 2:
+				<input type="number" name="Z2">
+<br>
+<br>
+				<input type="button" onclick="addition()" value="+">
+				<input type="button" onclick="subtraktion()" value="-">
+				<input type="button" onclick="multiplikation()" value="*">
+				<input type="button" onclick="division()" value="/">
+<br>
+<br>
+				Ergebnis:
+				<input type="number" name="ER">
+<br>
+				<img style="display: block; margin: auto;" src="Dekoration-1.svg">
+			</form>
+		</div>
+	</body>
+</html>

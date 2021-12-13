@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<title> Offizielle Website von Avatok </title>
+		<link rel="stylesheet" type="text/css" href="../../Styles/Styles.css">
+		<link rel="shortcut icon" type="image/x-icon" href="../../Grafiken/Icon.png"/>
+		<script type="text/javascript"> 
+			function KontaktError() {
+				window.alert("Fehler beim abrufen der Daten!\n\nBitte schreiben sie mir eine direkt E-mail an avatok.business@gmail.com, Ich werde sie so schnell wie möglich bearbeiten\n\n\nVielen Dank für Ihr Verständis")
+			}
+		</script>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header id="header">
+			<nav class="links" style="--items: 5;">
+				<a href="../../Index.html">Home</a>
+				<a href="Portfolio.html">Portfolio</a>
+				<a href="Social.html">Social Media</a>
+				<a href="AboutMe.html">About Me</a>
+				<a href="Kontakt.html">Kontakt</a>
+				<span class="line"></span>
+			</nav>
+		</header>
+		<div class="content">
+			<form method="post" name="Kontakt">
+				<fieldset>
+<br>
+					<legend style="font-size:16pt; font-weight:bold;">Kontakt Formular</legend>
+						<legend style="font-size:8pt; font-weight:bold;">Die Felder die mit einem Sternchen markiert sind, sind Pflichtfelder!!</legend>
+<br>
+						*Ihr Name / Ihr Firmenname:
+						<input type="Text" name="Anrede" required>
+<br>
+<br>
+						Betreff:
+						<select name="Betreff">
+							<option value="PN">Persönliche Nachricht</option>
+							<option value="Beschwerde">Beschwerde</option>
+							<option value="Bestellung">Bestellung</option>
+							<option value="S">Sonstiges</option>
+						</select>
+<br>
+<br>
+						Priorität? 
+						<select name="Priorität">
+							<option value="hoch">Hoch</option>
+							<option value="mittel">Mittel</option>
+							<option value="gering">Gering</option>
+						</select>
+<br>
+<br>
+						*Ihre Nachricht: <br>
+						<textarea id="Textarea" name="Nachricht" required></textarea>
+<br>
+<br>
+						Ihre E-mail zur Rückmeldung:
+						<input type="Email" name="Email" required>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+						<input type="submit" value="Abschicken" onclick="KontaktError()">
+						<div id="status"></div>
+						</center>
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
