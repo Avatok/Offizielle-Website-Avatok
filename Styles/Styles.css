@@ -52,7 +52,6 @@ body {
 .links > .line {
 	background: #68a;
 	height: 1px;
-	pointer-events: none;
 }
 
 #header {
