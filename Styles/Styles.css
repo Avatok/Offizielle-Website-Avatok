@@ -22,7 +22,6 @@ body {
 	box-sizing: border-box;
 	color: #666;
 	font-size: 1.6em;
-	line-height: 1.4em;
 	margin: 20px auto;
 	margin-top: 80px;
 	padding: 20px;
@@ -120,7 +119,6 @@ input{
 	border: 1px solid #ccc;
 	margin-top: 6px;
 	margin-bottom: 16px;
-	resize: vertical;
 }
 
 #Textarea {
