@@ -1,11 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Inconsolata|Lato:300,400,700');
-
 *{
 	margin: 0;
 	padding: 0;
 }
 
-html, body { min-height: 100%; }
+html { min-height: 100%; }
 
 body {
 	background-color: #345;
@@ -17,6 +15,7 @@ body {
 	box-sizing: border-box;
 }
 
+/*Content*/
 .content {
 	background-color: #fff;
 	border-radius: 8px;
@@ -31,6 +30,7 @@ body {
 	max-width: 800px;
 }
 
+/*Menü*/
 .links {
 	background-color: #123;
 	background-image: linear-gradient(to bottom, #0003, transparent);
@@ -39,16 +39,19 @@ body {
 	font-size: 2em;
 	font-weight: 300;
 }
+
 .links > a {
 	color: #9ab;
 	padding: .75em;
 	text-align: center;
 	text-decoration: none;
 }
+
 .links > a:hover {
 	background: #ffffff06;
 	color: #adf;
 }
+
 .links > .line {
 	background: #68a;
 	height: 1px;
@@ -66,16 +69,12 @@ body {
 	position: relative;
 }
 .links > .line {
-	opacity: 0;
 	transition: all .5s;
 	position: absolute;
 	bottom: 0;
 	left: var(--left, calc(100% / var(--items) * (var(--index) - 1)));
 	width: var(--width, calc(100% / var(--items)));
 	--index: 0;
-}
-.links > a:hover ~ .line {
-	opacity: 1;
 }
 
 .links > a:nth-of-type(1):hover ~ .line { --index: 1; }
@@ -95,7 +94,6 @@ body {
 #logo{
 	width: 15%;
 	object-fit: cover;
-	aspect-ratio: 1/1;
 	border-radius: 50%;
 	align-content: center;
 }
