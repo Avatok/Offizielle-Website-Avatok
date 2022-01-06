@@ -27,9 +27,9 @@
 				<fieldset>
 <br>
 					<legend style="font-size:16pt; font-weight:bold;">Kontakt Formular</legend>
-						<legend style="font-size:8pt; font-weight:bold;">Die Felder die mit einem Sternchen markiert sind, sind Pflichtfelder!!</legend>
+						<p style="font-size:8pt; font-weight:bold;">Alle Felder die mit einen Sternchen markiert sind, müssen ausgefüllt werden!!</p>
 <br>
-						*Ihr Name / Ihr Firmenname:
+						*Name / Firmenname:
 						<input type="Text" name="Anrede" required>
 <br>
 <br>
@@ -38,7 +38,7 @@
 							<option value="PN">Persönliche Nachricht</option>
 							<option value="Beschwerde">Beschwerde</option>
 							<option value="Bestellung">Bestellung</option>
-							<option value="S">Sonstiges</option>
+							<option value="S" selected>Sonstiges</option>
 						</select>
 <br>
 <br>
@@ -52,6 +52,7 @@
 <br>
 						*Ihre Nachricht: <br>
 						<textarea id="Textarea" name="Nachricht" required></textarea>
+						<p>*Bitte schreiben sie alle wichtige Dinge in dieses Feld*</p>
 <br>
 <br>
 						Ihre E-mail zur Rückmeldung:
@@ -63,8 +64,10 @@
 <br>
 <br>
 <br>
-						<input type="submit" value="Abschicken" onclick="KontaktError()">
+						<center>
+							<input type="submit" value="Abschicken" onclick="KontaktError()" class="abschicken">
 						</center>
+<br>
 				</fieldset>
 			</form>
 		</div>
